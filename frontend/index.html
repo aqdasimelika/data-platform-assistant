@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دستیار کاربر - پلتفرم تحلیل داده</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app-container">
+    <!-- هدر -->
+    <div class="header">
+        <h1>دستیار کاربر | پلتفرم تحلیل داده</h1>
+        <div class="user-info">
+            <span class="username" id="username">DOMAIN\user123</span>
+            <span class="role-badge" id="user-role">Expert</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- سایدبار -->
+        <div class="sidebar">
+            <div class="nav-buttons">
+                <button class="nav-button" id="back-button">بازگشت</button>
+                <button class="nav-button" id="restart-button">شروع مجدد</button>
+            </div>
+        </div>
+
+        <!-- محتوای چت -->
+        <div class="chat-container">
+                <!-- بخش خلاصه مسیر -->
+            <div id="path-summary" class="path-summary"></div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- پیام‌های چت اینجا نمایش داده می‌شوند -->
+            </div>
+            <div class="input-container" id="chat-input-area">
+                <!-- ورودی چت اینجا نمایش داده می‌شود -->
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--  ثبت تیکت -->
+<div class="modal" id="ticket-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title">ثبت تیکت پشتیبانی</h2>
+            <button class="close-button" id="close-modal">&times;</button>
+        </div>
+        <form id="ticket-form">
+            <div class="form-group">
+                <label class="form-label">مسیر طی شده:</label>
+                <div id="ticket-path-summary" class="form-input" style="background: var(--bg-tertiary); padding: 10px; border-radius: 6px; font-size: 13px;">
+                    <!-- مسیر در اینجا نمایش داده می‌شود -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ticket-description" class="form-label">توضیحات مشکل:</label>
+                <textarea id="ticket-description" class="form-textarea" placeholder="شرح کامل مشکل را وارد کنید..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="ticket-serial" class="form-label">شماره سریال:</label>
+                <input type="text" id="ticket-serial" class="form-input" placeholder="شماره سریال را وارد کنید">
+            </div>
+            <div class="form-group">
+                <label class="form-label">مسیر فایل لاگ:</label>
+                <div class="file-input-container">
+                    <input type="text" id="log-path" class="file-path" placeholder="مسیر فایل لاگ را وارد یا انتخاب کنید" readonly>
+                    <button type="button" class="browse-button" id="browse-button">انتخاب مسیر</button>
+                </div>
+                <small style="color: var(--text-secondary); margin-top: 5px; display: block;">
+                    توجه: فقط مسیر فایل ارسال می‌شود، فایل آپلود نمی‌شود.
+                </small>
+            </div>
+            <div class="error-message" id="ticket-error"></div>
+            <div class="success-message" id="ticket-success"></div>
+            <div class="modal-actions">
+                <button type="button" class="cancel-button" id="cancel-ticket">انصراف</button>
+                <button type="submit" class="submit-button">ثبت تیکت</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="render.js"></script>
+</body>
+</html>

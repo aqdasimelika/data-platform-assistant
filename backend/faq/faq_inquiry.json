@@ -1,0 +1,79 @@
+{
+  "role": "inquiry",
+  "startNode": "start",
+  "nodes": {
+    "start": {
+      "type": "message",
+      "text": "سلام 👋\nبرای راهنمایی استفاده از پلتفرم تحلیل داده در خدمتتون هستیم.",
+      "next": "select_issue"
+    },
+
+    "select_issue": {
+      "type": "select",
+      "searchable": true,
+      "text": "مشکل شما در چه بخشی است؟",
+      "options": [
+        { "label": "ورود به سیستم", "next": "solution_login" },
+        { "label": "مشاهده داده‌ها", "next": "solution_view" },
+        { "label": "سایر موارد", "next": "custom_input" }
+      ]
+    },
+
+    "solution_login": {
+      "type": "solution",
+      "text": "لطفاً از صحت نام کاربری ویندوز و دسترسی خود اطمینان حاصل کنید.",
+      "next": "ask_resolved"
+    },
+
+    "solution_view": {
+      "type": "solution",
+      "text": "بررسی کنید که دسترسی مشاهده پروژه برای شما فعال باشد.",
+      "next": "ask_resolved"
+    },
+
+    "ask_resolved": {
+      "type": "confirm",
+      "text": "آیا مشکل شما برطرف شد؟",
+      "yes": "end",
+      "no": "confirm_ticket"
+    },
+
+    "confirm_ticket": {
+      "type": "confirm",
+      "text": "آیا مایل به ثبت تیکت هستید؟",
+      "yes": "log_description",
+      "no": "end"
+    },
+   
+    "log_description": {
+      "type": "input",
+      "text": "لطفاً توضیح کامل مشکل را وارد کنید:",
+      "store_as": "description",
+      "next": "log_serial"
+    },
+
+    "log_serial": {
+      "type": "input",
+      "text": "شماره سریال را وارد کنید:",
+      "store_as": "serial",
+      "next": "log_path"
+    },
+
+    "log_path": {
+      "type": "input",
+      "text": "مسیر فایل لاگ را وارد کنید:",
+      "store_as": "log_path",
+      "next": "create_ticket"
+    },
+
+    "create_ticket": {
+      "type": "ticket",
+      "text": "تیکت شما با اطلاعات واردشده ثبت خواهد شد."
+    },
+
+    "end": {
+      "type": "end",
+      "text": "از همراهی شما سپاسگزاریم."
+    }
+  }
+}

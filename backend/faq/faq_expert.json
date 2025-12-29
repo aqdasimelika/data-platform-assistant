@@ -1,0 +1,175 @@
+
+{
+  "role": "expert",
+  "startNode": "start",
+  
+  "nodes": {
+    "start": {
+      "type": "message",
+      "text": "سلام 👋\nبرای راهنمایی و پاسخ سوالات درباره پلتفرم تحلیل داده در خدمتتون هستیم.",
+      "next": "select_domain"
+    },
+
+    "select_domain": {
+      "type": "select",
+      "parent":"start",
+      "text": "لطفاً حوزه بروز مشکل را انتخاب کنید:",
+      "options": [
+        { "label": "نرم‌افزار", "next": "software_issue" },
+        { "label": "سخت‌افزار", "next": "hardware_message" }
+      ]
+    },
+
+    "hardware_message": {
+      "type": "message",
+      "parent":"select_domain",
+      "text": "در حال حاضر پشتیبانی سخت‌افزار فعال نیست.",
+      "next": "confirm_ticket"
+    },
+
+    "software_issue": {
+      "type": "select",
+      "parent":"select_domain",
+      "text": "نوع مشکل نرم‌افزاری چیست؟",
+      "options": [
+        { "label": "کندی سیستم", "next": "solution_performance" },
+        { "label": "خطای پلاگین", "next": "plugin_select" },
+        { "label": "سایر موارد", "next": "custom_input" }
+      ]
+    },
+
+    "solution_performance": {
+      "type": "solution",
+      "parent":"software_issue",
+      "text": "مصرف CPU و RAM سیستم را بررسی کرده و سرویس‌های غیرضروری را متوقف نمایید.",
+      "next": "ask_resolved"
+    },
+
+    "plugin_select": {
+      "type": "select",
+      "parent":"software_issue",
+      "text": "نام پلاگین را انتخاب کنید:",
+      "maxVisibleOptions": 3,
+      "options": [
+        { "label": "ذخیره موقت داده", "next": "error_code_select" },
+        { "label": "تحلیل جریان", "next": "error_code_select" },
+        { "label": "پردازش پیشرفته", "next": "error_code_select" },
+        { "label": "نمایش گراف", "next": "error_code_select" }
+      ]
+    },
+
+    "error_code_select": {
+      "type": "select",
+      "parent":"plugin_select",
+      "text": "کد خطا را انتخاب کنید:",
+      "maxVisibleOptions": 3,
+      "options": [
+        { "label": "ERR-101", "next": "solution_err_101" },
+        { "label": "ERR-102", "next": "solution_err_102" },
+        { "label": "ERR-103", "next": "solution_err_103" },
+        { "label": "ERR-201", "next": "solution_generic" },
+        { "label": "ERR-305", "next": "solution_generic" },
+        { "label": "ERR-402", "next": "solution_generic" }
+      ]
+    },
+
+    "solution_err_101": {
+      "type": "solution",
+      "parent":"error_code_select",
+      "text": "خطا مربوط به عدم بارگذاری تنظیمات اولیه پلاگین است.",
+      "next": "ask_resolved"
+    },
+
+    "solution_err_102": {
+      "type": "solution",
+      "parent":"error_code_select",
+      "text": "خطا به دلیل عدم اتصال به دیتابیس رخ داده است.",
+      "next": "ask_resolved"
+    },
+
+    "solution_err_103": {
+      "type": "solution",
+      "parent":"error_code_select",
+      "text": "Timeout در پردازش درخواست رخ داده است.",
+      "next": "ask_resolved"
+    },
+
+    "solution_generic": {
+      "type": "solution",
+      "parent":"error_code_select",
+      "text": "برای این خطا، تنظیمات پلاگین و لاگ‌های سیستم بررسی شود.",
+      "next": "ask_resolved"
+    },
+
+    "ask_resolved": {
+      "type": "confirm",
+      "text": "آیا مشکل شما برطرف شد؟",
+      "yes": "end",
+      "no": "confirm_ticket"
+    },
+
+    "confirm_ticket": {
+      "type": "confirm",
+      "text": "آیا مایل به ثبت تیکت هستید؟",
+      "yes": "log_description",
+      "no": "end"
+    },
+
+    "log_description": {
+      "type": "input",
+      "text": "لطفاً توضیح کامل مشکل را وارد کنید:",
+      "store_as": "description",
+      "next": "log_serial"
+    },
+
+    "log_serial": {
+      "type": "input",
+      "text": "شماره سریال را وارد کنید:",
+      "store_as": "serial",
+      "next": "log_path"
+    },
+
+    "log_path": {
+      "type": "input",
+      "text": "مسیر فایل لاگ را وارد کنید:",
+      "store_as": "log_path",
+      "next": "final_confirm"
+    },
+
+    "final_confirm": {
+      "type": "confirm",
+      "text": "آیا اطلاعات واردشده برای ثبت تیکت تأیید می‌شود؟",
+      "yes": "create_ticket",
+      "no": "confirm_ticket"
+    },
+
+    "create_ticket": {
+      "type": "ticket",
+      "next": "after_ticket"
+},
+
+
+
+"custom_input": {
+      "type": "input",
+      "text": "لطفاً توضیح کوتاهی از مشکل وارد نمایید:",
+      "store_as": "description",
+      "next": "confirm_ticket"
+    },
+"after_ticket": {
+      "type": "confirm",
+      "text": "تیکت با موفقیت ثبت شد. مایلید چه کاری انجام دهید؟",
+      "yes": "restart",
+      "no": "end"
+},
+"restart": {
+  "type": "restart"
+},
+
+
+    "end": {
+      "type": "end",
+      "text": "از همراهی شما سپاسگزاریم."
+    }
+  }
+}

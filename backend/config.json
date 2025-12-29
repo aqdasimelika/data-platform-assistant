@@ -1,0 +1,11 @@
+{
+  "project_name": "User Support Assistant",
+  "tickets_file": "data/tickets_log.json",
+  "role_service_url": "",
+  "jira": {
+    "enabled": false,
+    "url": "",
+    "project_key": "",
+    "api_token": ""
+  }
+}

@@ -1,0 +1,502 @@
+:root {
+    --bg-primary: #2E2E2E;
+    --bg-secondary: #252525;
+    --bg-tertiary: #3C3C3C;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --accent: #252525;
+    --accent-hover: #106ebe;
+    --border: #404040;
+    --success: #107c10;
+    --warning: #d83b01;
+    --error: #e81123;
+    --message-bot: #595959;
+    --message-user: #3B3B3B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: var(--bg-primary);
+}
+
+/* هدر */
+.header {
+    background: linear-gradient(135deg, #005a9e 50%, var(--accent) 60%);
+    padding: 22px 16px 10px;
+    text-align: right;
+    border-bottom: 4px solid var(--accent-hover);
+    border-top: 4px solid var(--accent-hover);
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.username {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.role-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* محتوای اصلی */
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    flex-direction: row-reverse; 
+}
+
+/* سایدبار */
+.sidebar {
+    width: 250px;
+    background: var(--bg-secondary);
+    border-left: 4px solid var(--accent-hover);
+    border-right: 4px solid var(--accent-hover);
+    border-bottom: 4px solid var(--accent-hover);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.nav-button {
+    flex: 1;
+    padding: 10px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.2s;
+    transition: transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background: var(--accent);
+    border-color: var(--accent-hover);
+    transform: scale(1.05);
+}
+/* محتوای چت */
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-primary);
+    overflow: hidden;
+}
+.chat-messages {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 4px solid var(--accent-hover);
+    border-radius: 8px;
+    text-align: right;
+}
+
+.message {
+    max-width: 70%;
+    padding: 15px 20px;
+    border-radius: 12px;
+    line-height: 1.6;
+}
+
+.message-bot {
+    background: var(--message-bot);
+    border: 1px solid var(--border);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+    margin-right: auto; 
+    margin-left: 2px;
+    text-align: right;
+    animation: fadeIn 0.3s ease;
+}
+.no-resault-bot{
+    border: 1px solid var(--text-primary);
+    align-self: flex-start;
+    margin-right: 0px; 
+    margin: auto;
+    animation: fadeIn 0.3s ease;            
+    max-width: 70%;
+    padding: 15px 20px;
+    border-radius: 12px;
+    line-height: 1.6;        
+}
+
+.message-user {
+    background: var(--message-user);
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+    margin-left: auto;
+    text-align: right;
+    animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);}
+    to {
+        opacity: 1;
+        transform: translateY(0);}
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px 20px;
+    margin-top: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.option-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.option-button {
+    display: flex;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    width: fit-content;
+    min-width: 120px;
+    min-height: 60px;
+    white-space: normal;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+
+.option-button:hover {
+    background: var(--accent);
+    border-color: var(--bg-tertiary);
+    transform: translateY(-1px);
+}
+
+.input-container {
+    padding: 20px 30px;
+    border-top: 4px solid var(--accent-hover);
+    border-right: 4px solid var(--accent-hover);
+    border-bottom: 4px solid var(--accent-hover);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    gap: 20px;
+}
+
+.input-field {
+    width: 100%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.input-field::placeholder {
+    color: var(--text-secondary);
+}
+.send{
+    display: flex;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 5px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    width: fit-content;
+    min-width: 80px;
+    min-height: 40px;
+    white-space: normal;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+.load-more {
+    grid-column: 1 / -1;
+    border: 4px solid var(--border);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    text-align: center;
+     margin: 20px auto 0 auto; 
+    display: block; 
+    min-width: 120px;
+    min-height: 40px;
+}
+
+.load-more:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.load-more:active {
+    transform: translateY(0);
+}
+
+
+/* مدال تیکت */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: var(--bg-secondary);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid var(--border);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-textarea {
+    width: 100%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 12px;
+    border-radius: 6px;
+    resize: vertical;
+    min-height: 100px;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.file-input-container {
+    display: flex;
+    gap: 10px;
+}
+
+.file-path {
+    flex: 1;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.browse-button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.cancel-button {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.submit-button {
+    background: var(--success);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.error-message {
+    color: var(--error);
+    background: rgba(232, 17, 35, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
+
+.success-message {
+    color: var(--success);
+    background: rgba(16, 124, 16, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
+
+/* خط جداکننده */
+.divider {
+    height: 1px;
+    background: var(--border);
+    margin: 20px 0;
+}
+/* استایل برای کانتینر صفحه آخر */
+.end-page-container {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+}
+
+/* کانتینر دکمه‌ها */
+.end-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* دکمه شروع مجدد */
+.restart-btn {
+    background: var(--bg-tertiary);
+}
+
+/* دکمه پایان */
+.end-btn {
+    background: var(--bg-tertiary);
+}
+

@@ -1,0 +1,682 @@
+[
+  {
+    "id": 1766825451813,
+    "username": "HARAJ PC",
+    "role": "expert",
+    "path": [
+      {
+        "type": "search",
+        "node": "software_issue",
+        "label": "نرم‌افزار",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "plugin_select",
+        "label": "خطای پلاگین",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "error_code_select",
+        "label": "نمایش گراف",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "solution_err_101",
+        "label": "ERR-101",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "confirm_ticket",
+        "label": "خیر",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "log_description",
+        "label": "بله",
+        "value": null
+      },
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "غغغغغغغغغغ"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "غغغغغغغغغغغغ"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "غغغغغغغغغغغغ"
+      },
+      {
+        "type": "search",
+        "node": "create_ticket",
+        "label": "بله",
+        "value": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "غغغغغغغغغغ"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "غغغغغغغغغغغغ"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "غغغغغغغغغغغغ"
+      }
+    ],
+    "created_at": "2025-12-27T12:20:51.813260Z"
+  },
+  {
+    "id": 1766835881816,
+    "username": "HARAJ PC",
+    "role": "expert",
+    "path": [
+      {
+        "type": "search",
+        "node": "software_issue",
+        "label": "نرم‌افزار",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "plugin_select",
+        "label": "خطای پلاگین",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "error_code_select",
+        "label": "نمایش گراف",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "solution_err_101",
+        "label": "ERR-101",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "confirm_ticket",
+        "label": "خیر",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "log_description",
+        "label": "بله",
+        "value": null
+      },
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "حححححححح"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "حححححححححح"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ححححححححح"
+      },
+      {
+        "type": "search",
+        "node": "create_ticket",
+        "label": "بله",
+        "value": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "حححححححح"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "حححححححححح"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ححححححححح"
+      }
+    ],
+    "created_at": "2025-12-27T15:14:41.816153Z"
+  },
+  {
+    "id": 1766836372984,
+    "username": "HARAJ PC",
+    "role": "expert",
+    "path": [
+      {
+        "type": "search",
+        "node": "software_issue",
+        "label": "نرم‌افزار",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "solution_performance",
+        "label": "کندی سیستم",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "confirm_ticket",
+        "label": "خیر",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "log_description",
+        "label": "بله",
+        "value": null
+      },
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "ط"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "ط"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ط"
+      },
+      {
+        "type": "search",
+        "node": "create_ticket",
+        "label": "بله",
+        "value": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "ط"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "ط"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ط"
+      }
+    ],
+    "created_at": "2025-12-27T15:22:52.984170Z"
+  },
+  {
+    "id": 1766836521184,
+    "username": "HARAJ PC",
+    "role": "expert",
+    "path": [
+      {
+        "type": "search",
+        "node": "software_issue",
+        "label": "نرم‌افزار",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "solution_performance",
+        "label": "کندی سیستم",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "confirm_ticket",
+        "label": "خیر",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "log_description",
+        "label": "بله",
+        "value": null
+      },
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "م"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "م"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "م"
+      },
+      {
+        "type": "search",
+        "node": "create_ticket",
+        "label": "بله",
+        "value": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "م"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "م"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "م"
+      }
+    ],
+    "created_at": "2025-12-27T15:25:21.184220Z"
+  },
+  {
+    "id": 1766836633008,
+    "username": "HARAJ PC",
+    "role": "expert",
+    "path": [
+      {
+        "type": "search",
+        "node": "software_issue",
+        "label": "نرم‌افزار",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "plugin_select",
+        "label": "خطای پلاگین",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "error_code_select",
+        "label": "نمایش گراف",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "solution_err_101",
+        "label": "ERR-101",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "confirm_ticket",
+        "label": "خیر",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "log_description",
+        "label": "بله",
+        "value": null
+      },
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "ا"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "ا"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ا"
+      },
+      {
+        "type": "search",
+        "node": "create_ticket",
+        "label": "بله",
+        "value": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "ا"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "ا"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ا"
+      }
+    ],
+    "created_at": "2025-12-27T15:27:13.008465Z"
+  },
+  {
+    "id": 1766836797608,
+    "username": "HARAJ PC",
+    "role": "expert",
+    "path": [
+      {
+        "type": "search",
+        "node": "software_issue",
+        "label": "نرم‌افزار",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "plugin_select",
+        "label": "خطای پلاگین",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "error_code_select",
+        "label": "نمایش گراف",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "solution_err_101",
+        "label": "ERR-101",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "confirm_ticket",
+        "label": "خیر",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "log_description",
+        "label": "بله",
+        "value": null
+      },
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "ه"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "ه"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ه"
+      },
+      {
+        "type": "search",
+        "node": "create_ticket",
+        "label": "بله",
+        "value": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "ه"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "ه"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ه"
+      }
+    ],
+    "created_at": "2025-12-27T15:29:57.608203Z"
+  },
+  {
+    "id": 1766836852327,
+    "username": "HARAJ PC",
+    "role": "expert",
+    "path": [
+      {
+        "type": "search",
+        "node": "software_issue",
+        "label": "نرم‌افزار",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "plugin_select",
+        "label": "خطای پلاگین",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "error_code_select",
+        "label": "نمایش گراف",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "solution_err_102",
+        "label": "ERR-102",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "confirm_ticket",
+        "label": "خیر",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "log_description",
+        "label": "بله",
+        "value": null
+      },
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "من"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "من"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "من"
+      },
+      {
+        "type": "search",
+        "node": "create_ticket",
+        "label": "بله",
+        "value": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "من"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "من"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "من"
+      }
+    ],
+    "created_at": "2025-12-27T15:30:52.327595Z"
+  },
+  {
+    "id": 1766836947423,
+    "username": "HARAJ PC",
+    "role": "expert",
+    "path": [
+      {
+        "type": "search",
+        "node": "software_issue",
+        "label": "نرم‌افزار",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "plugin_select",
+        "label": "خطای پلاگین",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "error_code_select",
+        "label": "ذخیره موقت داده",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "solution_err_101",
+        "label": "ERR-101",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "confirm_ticket",
+        "label": "خیر",
+        "value": null
+      },
+      {
+        "type": "search",
+        "node": "log_description",
+        "label": "بله",
+        "value": null
+      },
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "هههه"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "ههه"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ههه"
+      },
+      {
+        "type": "search",
+        "node": "create_ticket",
+        "label": "بله",
+        "value": null
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "node": "log_description",
+        "label": null,
+        "value": "هههه"
+      },
+      {
+        "type": "input",
+        "node": "log_serial",
+        "label": null,
+        "value": "ههه"
+      },
+      {
+        "type": "input",
+        "node": "log_path",
+        "label": null,
+        "value": "ههه"
+      }
+    ],
+    "created_at": "2025-12-27T15:32:27.423774Z"
+  }
+]
